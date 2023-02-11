@@ -60,11 +60,13 @@
             font-size: 1.5rem;
             padding: 0 0 20px;
             font-weight: 500;
+
+            & a {
+                color: var(--primary-color);
+            }
         }
 
-        & a {
-            color: var(--white-color);
-        }
+        
 
         & i {
             opacity: .7;
@@ -90,14 +92,14 @@
                 font-weight: 900;
                 margin-bottom: 10px;
     
-                &::after {
-                    content: "+";
-                    position: absolute; 
-                    right: 175px;
-                    font-size: 33px;
-                    font-weight: 300;
-                    top: -3px;
-                }
+                // &::after {
+                //     content: "+";
+                //     position: absolute; 
+                //     right: 175px;
+                //     font-size: 33px;
+                //     font-weight: 300;
+                //     top: -3px;
+                // }
             }
             
             .text {

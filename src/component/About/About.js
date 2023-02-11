@@ -22,11 +22,15 @@ function About() {
                     <span>
                         <i>Age:</i> 22
                     </span>
-                    <span>
-                        <i>Developer</i>: Available
-                    </span>
+
                     <span>
                         <i>Phone</i>: 038 2244 897
+                    </span>
+                    <span>
+                        <i>GitHub</i>:{' '}
+                        <a href="https://github.com/DinhqTu" target="_blank">
+                            https://github.com/DinhqTu
+                        </a>
                     </span>
                     <span>
                         <i>Linkedin</i>:{' '}

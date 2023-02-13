@@ -6,6 +6,7 @@ import Anime from '../Image/animestore.png';
 import Tiktok from '../Image/tiktok.png';
 import Academy from '../Image/academy.png';
 import Music from '../Image/music.png';
+import Portfolio2 from '../Image/portfolio.png';
 
 import Project from './Project';
 
@@ -23,18 +24,10 @@ const INFO_PROJECT = [
     {
         title: 'Clone TikTok',
         project: 'Website',
-        languages: 'HTML, CSS, JS, REACT',
+        languages: 'HTML, SCSS, JS, REACT',
         client: 'Anubius',
         preview: '',
         image: Tiktok,
-    },
-    {
-        title: 'Template Shopee Home',
-        project: 'Template',
-        languages: 'HTML, CSS ',
-        client: 'Anubius',
-        preview: 'https://dinhqtu.github.io/template_shopee_home/',
-        image: Shopee,
     },
     {
         title: 'Academy Website',
@@ -45,12 +38,28 @@ const INFO_PROJECT = [
         image: Academy,
     },
     {
+        title: 'Template Shopee Home',
+        project: 'Template',
+        languages: 'HTML, CSS ',
+        client: 'Anubius',
+        preview: 'https://dinhqtu.github.io/template_shopee_home/',
+        image: Shopee,
+    },
+    {
         title: 'Music Play',
         project: 'Website',
         languages: 'HTML, CSS, JS',
         client: 'Anubius',
         preview: 'https://dinhqtu.github.io/Music_Play/',
         image: Music,
+    },
+    {
+        title: 'Portfolio',
+        project: 'Website',
+        languages: 'HTML, CSS, JS, React',
+        client: 'Anubius',
+        preview: 'https://portfolio-1fcd5.web.app/',
+        image: Portfolio2,
     },
 ];
 
@@ -76,26 +85,6 @@ function Portfolio() {
                 {INFO_PROJECT.map((item, index) => {
                     return <Project data={item} key={index} />;
                 })}
-                {/* <div className={cx('item')}>
-                    <a href="#" className={cx('link')}>
-                        <img src={Shopee} alt="shopee" />
-                    </a>
-                </div>
-                <div className={cx('item')}>
-                    <a href="#" className={cx('link')}>
-                        <img src={Shopee} alt="shopee" />
-                    </a>
-                </div>
-                <div className={cx('item')}>
-                    <a href="#" className={cx('link')}>
-                        <img src={Shopee} alt="shopee" />
-                    </a>
-                </div>
-                <div className={cx('item')}>
-                    <a href="#" className={cx('link')}>
-                        <img src={Shopee} alt="shopee" />
-                    </a>
-                </div> */}
             </div>
         </div>
     );

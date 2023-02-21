@@ -73,3 +73,48 @@
 }
 
 
+// mobile: width < 740px
+@media (max-width: 46.1875em){
+
+    .wrapper {
+        position: fixed;
+        bottom: -6px;
+        right: 0;
+        padding: 0;
+        height: 72px;
+        width: 100%;
+        align-items: flex-end;
+        background-color: darkcyan;
+        border-top-left-radius:6px ;
+        border-top-right-radius:6px ;
+
+        .navbar {
+            width: 100%;
+
+            .list_items {
+                flex-direction: row;
+                justify-content: center;
+
+                .item {
+                    margin: 12px;
+
+                    &:hover .title{
+                        right: 0;
+                        border-radius: 0;
+                        opacity: 1;
+                        display: none;
+                
+                    }
+                }
+            }
+        }
+    }
+
+    
+}
+
+
+// tablet: width >= 740px and < 1024px
+@media (min-width: 46.25em ) and (max-width: 64.3125em){
+
+}

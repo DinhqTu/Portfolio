@@ -182,3 +182,97 @@ header {
 
 }
 
+// mobile devices
+@media (max-width: 46.1875em){
+    .wrapper {
+        width: 100%;
+        background: rgb(2,0,36);
+        background: linear-gradient(65deg, rgba(2,0,36,1) 0%, rgba(65,176,162,0.42629551820728295) 45%, rgba(0,212,255,1) 100%);
+        
+        padding-bottom: 100px;
+        .header {
+            
+            padding: 20px 0;
+
+            & h1 {
+                font-size: 2.8rem;
+
+                & span {
+                    font-size: 2.8rem;
+                }
+            }
+
+            .contact {
+                font-size: 5rem;
+                letter-spacing: 4px;
+            }
+
+        }
+
+        .container {
+            flex-direction: column;
+            margin-bottom: 0 ;
+
+            .left {
+                width: 100%;
+
+                .title {
+                    font-size: 1.6rem;
+                }
+
+                .content {
+                    font-size: 1.1rem;
+                    margin-bottom: 16px;
+                }
+
+                .item {
+                    margin-bottom: 14px;
+                    
+                    & span {
+                        font-size: 1.4rem;
+                    }
+                }
+
+                .social {
+                    display: flex;
+                    justify-content: center;
+                    margin-bottom: 16px;
+                }
+            }
+
+            .right {
+                width: 100%;
+                align-items: center;
+
+                & span {
+                    width: 100%;
+
+                    & input {
+                        width: 46%;
+                    }
+                }
+
+                .input_m {
+                    width: 95%;
+                }
+
+                .input_l {
+                    width: 95%;
+                }
+
+                .contact {
+                    margin-top:20px ;
+                    width: 54%;
+                    padding: 14px 41px 14px 7px;
+                    border: 2px solid var(--primary-color);
+                    font-size: 15px;
+                    font-weight: 600;
+                    overflow: hidden;
+                    margin-left: 12px;
+            
+                }
+            }
+        }
+    }
+}
+

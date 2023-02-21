@@ -1,6 +1,7 @@
 import { faBriefcase, faDownload } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import classNames from 'classnames/bind';
+import { Link } from 'react-router-dom';
 import styles from './About.module.scss';
 const cx = classNames.bind(styles);
 
@@ -41,12 +42,19 @@ function About() {
                             linkedin.com/in/dinhqtu861/
                         </a>
                     </span>
-                    <button className={cx('contact')}>
-                        <span>DOWNLOAD CV</span>
-                        <i className={cx('btn_right')}>
-                            <FontAwesomeIcon icon={faDownload} />
-                        </i>
-                    </button>
+                    <a
+                        href="https://drive.google.com/file/d/1HjQO4LBZbMjPLfqx_yNkRvA8NOGLn-O-/view?usp=sharing"
+                        // to="/public/CV_DinhQuocTu_FrontEnd.pdf"
+                        target="_blank"
+                        download
+                    >
+                        <button className={cx('contact')}>
+                            <span>DOWNLOAD CV</span>
+                            <i className={cx('btn_right')}>
+                                <FontAwesomeIcon icon={faDownload} />
+                            </i>
+                        </button>
+                    </a>
                 </div>
                 <div className={cx('info')}>
                     <span className={cx('name')}>
@@ -56,7 +64,7 @@ function About() {
                         <i>Nationality</i>: Vietnamese
                     </span>
                     <span>
-                        <i>Address</i>: Ho Chi Minh City
+                        <i>Address</i>: Ho Chi Minh
                     </span>
                     <span>
                         <i>Email</i>: dinhqtu861@gmail.com
@@ -77,18 +85,20 @@ function About() {
                 </div>
                 <div className={cx('info')}>
                     <div className={cx('block')}>
-                        <span className={cx('count')}>0 </span>
-                        <span className={cx('text')}>Years of experience </span>
+                        <span className={cx('count')}>5 </span>
+                        <span className={cx('text')}>HAPPY CUSTOMERS </span>
                     </div>
                     <div className={cx('block')}>
                         <span className={cx('count')}>0 </span>
-                        <span className={cx('text')}>Years of experience </span>
+                        <span className={cx('text')}>AWARDS WON </span>
                     </div>
                 </div>
             </div>
             <div className={cx('my_skill')}>
                 <h3 className={cx('header')}>My Skills</h3>
                 <div className={cx('skills')}>
+                    <div className={cx('effect-1')}></div>
+                    <div className={cx('effect-2')}></div>
                     <div className={cx('skill')}>HTML</div>
                     <div className={cx('skill')}>CSS</div>
                     <div className={cx('skill')}>SCSS</div>
@@ -111,14 +121,15 @@ function About() {
                                 of Ho Chi Minh City
                             </h3>
                             <p>
-                                Lorem ipsum dolor sit amet, tempor incididunt ut
-                                laboreconsectetur elit, sed do eiusmod tempor
-                                duntt
+                                Trong quá trình theo học tại trường đã có thể
+                                thiết kế và xây dựng website. Học được các kỹ
+                                năng mềm như làm việc nhóm, xử lý vấn đề, tìm
+                                kiếm tài liệu,...
                             </p>
                         </div>
                     </div>
 
-                    <div className={cx('item')}>
+                    {/* <div className={cx('item')}>
                         <span className={cx('icon')}>
                             <FontAwesomeIcon icon={faBriefcase} />
                         </span>
@@ -134,7 +145,7 @@ function About() {
                                 duntt
                             </p>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </div>

@@ -74,11 +74,11 @@ function Portfolio() {
             </header>
             <nav className={cx('nav')}>
                 <ul>
-                    <li className={cx('all')}>ALL</li>
-                    <li>LOGO</li>
+                    <li className={cx('all')}>PROJECTS</li>
+                    {/* <li>LOGO</li>
                     <li>VIDEO</li>
                     <li>GRAPHIC DESIGN</li>
-                    <li>MOCKUP</li>
+                    <li>MOCKUP</li> */}
                 </ul>
             </nav>
             <div className={cx('items')}>

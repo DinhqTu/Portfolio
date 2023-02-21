@@ -38,11 +38,11 @@ function Header() {
                         title={'Contact'}
                         to={config.routes.contact}
                     />
-                    <Item
+                    {/* <Item
                         icon={faComment}
                         title={'Blog'}
                         to={config.routes.blog}
-                    />
+                    /> */}
                 </ul>
             </div>
         </header>

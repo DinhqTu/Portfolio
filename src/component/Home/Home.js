@@ -1,6 +1,9 @@
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import classNames from 'classnames/bind';
+import { NavLink } from 'react-router-dom';
+import config from '~/config';
+
 import styles from './Home.module.scss';
 const cx = classNames.bind(styles);
 
@@ -17,12 +20,14 @@ function Home() {
                     about building excellent software that improves the lives of
                     those around me.
                 </p>
-                <button className={cx('contact')}>
-                    <span> More About Me</span>
-                    <span className={cx('btn_right')}>
-                        <FontAwesomeIcon icon={faArrowRight} />
-                    </span>
-                </button>
+                <NavLink to={config.routes.about}>
+                    <button className={cx('contact')}>
+                        <span> More About Me</span>
+                        <span className={cx('btn_right')}>
+                            <FontAwesomeIcon icon={faArrowRight} />
+                        </span>
+                    </button>
+                </NavLink>
             </div>
         </div>
     );

@@ -9,6 +9,77 @@
 
 .navbar {
     color: #fff;
+
+    .btn_group {
+        position: absolute;
+        top: 50px;
+        right: 50%;
+        transform: translateX(50%);
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        background-color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        border-radius: 150px;
+        background: linear-gradient(145deg, #fff, #0f0f0f);
+        box-shadow:  3px 3px 6px #0a0a0a,
+                     -3px -3px 6px #181818;
+        
+        .btn_setting {
+            
+            color: aqua;
+            width: 20px;
+            height: 20px;
+            background-color: transparent;
+            animation: spin 2s linear infinite;
+            // animation: slideToLeft 2s linear;
+        }
+
+        @keyframes spin {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        .wrapper_setting {
+
+            height: 80px;
+            width: 160px;
+            position: absolute;
+            bottom: -90px;
+            right: 0px;
+            border-radius: 14px;
+            background-color: #ccc;
+            display: flex;
+            justify-content: space-evenly;
+            animation: slideToLeft .3s ease-in;
+            
+            @keyframes slideToLeft {
+                from {
+                    right: -140px;
+                }
+                to {
+                    right: 0px;
+                }
+            }
+
+            .mode {
+                margin-top: 20px;
+                font-size: 1.6rem;
+                color: #0a0a0a;
+            }
+        }
+
+        
+
+    }
 }
 
 .list_items {
@@ -108,6 +179,13 @@
                 }
             }
         }
+
+        .btn_group {
+            top: -85vh;
+            right: 24px;
+            width: 32px;
+            height: 32px;
+        }
     }
 
     
@@ -117,4 +195,65 @@
 // tablet: width >= 740px and < 1024px
 @media (min-width: 46.25em ) and (max-width: 64.3125em){
 
+}
+
+
+
+// switch dark/light mode 
+.switch {
+    --secondary-container: #3a4b39;
+    --primary: #84da89;
+    font-size: 17px;
+    position: relative;
+    display: inline-block;
+    width: 2.2em;
+    height: 1.2em;
+    margin-top: 18px;
+}
+   
+.switch input {
+    display: none;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+   
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #313033;
+    transition: .2s;
+    border-radius: 30px;
+}
+   
+.slider:before {
+    position: absolute;
+    content: "";
+    height: .8em;
+    width: .8em;
+    border-radius: 20px;
+    left: 0.2em;
+    bottom: 0.2em;
+    background-color: #aeaaae;
+    transition: .4s;
+}
+   
+input:checked + .slider::before {
+    background-color: var(--primary);
+}
+   
+input:checked + .slider {
+    background-color: var(--secondary-container);
+}
+   
+input:focus + .slider {
+    box-shadow: 0 0 1px var(--secondary-container);
+}
+   
+input:checked + .slider:before {
+    transform: translateX(1.1em);
 }

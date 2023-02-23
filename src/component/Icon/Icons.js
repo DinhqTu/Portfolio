@@ -85,7 +85,7 @@ export const IconGithub = ({
         viewBox="0 0 16 16"
         version="1.1"
         data-view-component="true"
-        fill="#fff"
+        fill="currentColor"
     >
         <path
             fillRule="evenodd"

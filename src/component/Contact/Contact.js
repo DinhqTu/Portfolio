@@ -77,7 +77,7 @@ function Contact() {
                             target="_blank"
                             rel="noreferrer"
                         >
-                            <IconGithub />
+                            <IconGithub className={cx('btn_github')} />
                         </a>
                         <a
                             href="https://twitter.com/DinhTu861"

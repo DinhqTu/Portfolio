@@ -15,10 +15,10 @@ function Home() {
                 <h1 className={cx('name')}>I am Dinh Tu</h1>
                 <h1 className={cx('job')}>Front-end Developer</h1>
                 <p className={cx('title')}>
-                    I'm a Vietnamese based front‑end developer focused on
-                    crafting clean & user‑friendly experiences, I am passionate
-                    about building excellent software that improves the lives of
-                    those around me.
+                    I'm a front‑end developer focused on crafting clean &
+                    user‑friendly experiences, I am passionate about building
+                    excellent software that improves the lives of those around
+                    me.
                 </p>
                 <NavLink to={config.routes.about}>
                     <button className={cx('contact')}>
